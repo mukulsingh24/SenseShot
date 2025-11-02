@@ -21,20 +21,20 @@ function Nav1() {
         Image Analysis
       </Navbar.Brand>
 
-      <Form className="d-flex mx-auto align-items-center">
+      <Form className="d-flex mx-auto align-items-center position-relative">
 
-        <InputGroup.Text style={{ background: 'white', border: 'none', borderRadius: '25px 0 0 25px' }}>
+        <InputGroup.Text style={{ position: 'absolute',background: 'white', border: 'none', borderRadius: '25px 0 0 25px' }}>
             <FaSearch size={18} style={{ color: 'gray' }} />
           </InputGroup.Text>    
         <Form.Control
           type="text"
           placeholder="Enter the Image to Search"
-          className="me-1 rounded-pill"
+          className="me-1 rounded-pill ps-5 pe-5"
           style={{ width: "500px" }}
         />
-        <InputGroup.Text style={{ background: 'white', border: 'none', cursor: 'pointer', borderRadius: '0 25px 25px 0' }}>
-            <MdScanner size={25} style={{ color: 'black' }} />
-          </InputGroup.Text>
+        <div style={{ position: 'absolute', right: '15px', zIndex: 10, cursor: 'pointer' }}>
+          <MdScanner size={25} style={{ color: 'black' }} />
+        </div>
       </Form>
 
       <Nav style={{marginRight:'50px'}}>
