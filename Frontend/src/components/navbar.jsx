@@ -32,9 +32,6 @@ function Nav1() {
           className="me-1 rounded-pill ps-5 pe-5"
           style={{ width: "500px" }}
         />
-        <div style={{ position: 'absolute', right: '15px', zIndex: 10, cursor: 'pointer' }}>
-          <MdScanner size={25} style={{ color: 'black' }} />
-        </div>
       </Form>
 
       <Nav style={{marginRight:'50px'}}>
