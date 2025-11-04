@@ -6,20 +6,22 @@ import Navbar from "react-bootstrap/Navbar";
 import { FaSearch } from "react-icons/fa";
 import { MdScanner } from "react-icons/md";
 import InputGroup from 'react-bootstrap/InputGroup';
-
+import { Link } from "react-router-dom";
 function Nav1() {
   return (
     <Navbar
       className="py-3"
       style={{ backgroundColor:"#000053", color: "white" }}
     >
+      <Link to='/Home' className="text-decoration-none">
       <Navbar.Brand
         href="#home"
         className="fw-bold"
         style={{ color: "white", marginLeft:'100px',fontSize:'30px'}}
       >
-        Image Analysis
+        SenseShot
       </Navbar.Brand>
+      </Link>
 
       <Form className="d-flex mx-auto align-items-center position-relative">
 
@@ -35,8 +37,12 @@ function Nav1() {
       </Form>
 
       <Nav style={{marginRight:'50px'}}>
-        <Button className="me-3">Login</Button> 
+        <Link to='/Login'>
+        <Button className="me-3">Login</Button>
+        </Link>
+        <Link to='/Submit'>
         <Button>Submit an Image</Button>
+        </Link>
       </Nav>
     </Navbar>
   );
